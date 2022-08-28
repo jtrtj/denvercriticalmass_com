@@ -25,8 +25,10 @@ const Home: NextPage = () => {
               width="200"
               height="200"
             />
-            <h1 className="">
-              Last Friday of every month 7PM. Meetup at{" "}
+            <h1 className="title">Every last Friday of every month.</h1>
+
+            <h2 className="subtitle">
+              Meeet up at 7:00PM at{" "}
               <a
                 href="https://goo.gl/maps/cVHetdaYH31WRxTk7"
                 target="_blank"
@@ -35,7 +37,18 @@ const Home: NextPage = () => {
                 Thatcher Fountain
               </a>
               .
-            </h1>
+            </h2>
+            <h2 className="subtitle">Ride at 7:20PM.</h2>
+            <h2 className="subtitle">
+              Upcoming dates: 9/30/2022, 10/28/2022, 11/25/2022
+            </h2>
+            <p>
+              What is{" "}
+              <a href="https://en.wikipedia.org/wiki/Critical_Mass_(cycling)">
+                Critical Mass
+              </a>
+              ?
+            </p>
           </div>
         </div>
       </div>
