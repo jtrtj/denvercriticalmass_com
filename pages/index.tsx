@@ -50,8 +50,8 @@ const Home: NextPage = () => {
               Upcoming dates: 9/30/2022, 10/28/2022, 11/25/2022
             </h2>
             <hr />
-            <button className="button" onClick={handleClick}>
-              details
+            <button className="button is-info" onClick={handleClick}>
+              Details
             </button>
             <h2 className="subtitle">
               What is{" "}
@@ -66,7 +66,7 @@ const Home: NextPage = () => {
             </h2>
             {modalState && (
               <div className="modal is-active">
-                <div className="modal-background"></div>
+                <div className="modal-background" onClick={handleClick}></div>
                 <div className="modal-card">
                   <header className="modal-card-head">
                     <p className="modal-card-title">Ride details:</p>
@@ -86,7 +86,7 @@ const Home: NextPage = () => {
                     </div>
                     <div className="box">
                       <h1 className="title">Pace:</h1>
-                      <h2 className="subtitle">Conversational</h2>
+                      <h2 className="subtitle">Conversational.</h2>
                     </div>
                     <div className="box">
                       <h1 className="title">Safety:</h1>
