@@ -78,15 +78,20 @@ const Home: NextPage = () => {
                   </header>
                   <section className="modal-card-body">
                     <div className="box">
-                      <h1 className="title">Route:</h1>
+                      <h1 className="title">The Ride:</h1>
                       <h2 className="subtitle">
-                        The route will go through Denver metro area, be about 1
-                        hour long and end where it started.
+                        Denver Critical Mass has no leader. The route will be
+                        determined on the ride. Typically the route will go
+                        through Denver metro area, be about one hour long and
+                        end where it started. We ride rain or shine.
                       </h2>
                     </div>
                     <div className="box">
                       <h1 className="title">Pace:</h1>
-                      <h2 className="subtitle">Conversational.</h2>
+                      <h2 className="subtitle">
+                        Conversational. The pack stays together and waits for
+                        the back.
+                      </h2>
                     </div>
                     <div className="box">
                       <h1 className="title">Safety:</h1>
@@ -97,7 +102,7 @@ const Home: NextPage = () => {
                   </section>
                   <footer className="modal-card-foot">
                     <h2 className="subtitle is-6">
-                      Great Q&As from{" "}
+                      Additional information at{" "}
                       <a
                         href="https://www.times-up.org/critical-mass/what-critical-mass"
                         target="_blank"
