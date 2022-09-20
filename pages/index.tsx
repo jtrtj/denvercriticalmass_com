@@ -1,8 +1,16 @@
 import type { NextPage } from "next";
+import { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 
 const Home: NextPage = () => {
+  const [modalState, setModal] = useState(false);
+
+  function handleClick() {
+    setModal(!modalState);
+    console.log(modalState);
+  }
+
   return (
     <>
       <Head>
@@ -36,19 +44,85 @@ const Home: NextPage = () => {
               >
                 Thatcher Fountain
               </a>
-              .
+              . Ride at 7:20PM.
             </h2>
-            <h2 className="subtitle">Ride at 7:20PM.</h2>
             <h2 className="subtitle">
               Upcoming dates: 9/30/2022, 10/28/2022, 11/25/2022
             </h2>
-            <p>
+            <hr />
+            <button className="button is-info" onClick={handleClick}>
+              Details
+            </button>
+            <h2 className="subtitle">
               What is{" "}
-              <a href="https://en.wikipedia.org/wiki/Critical_Mass_(cycling)">
+              <a
+                href="https://www.times-up.org/critical-mass/what-critical-mass"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Critical Mass
               </a>
               ?
-            </p>
+            </h2>
+            {modalState && (
+              <div className="modal is-active">
+                <div className="modal-background" onClick={handleClick}></div>
+                <div className="modal-card">
+                  <header className="modal-card-head">
+                    <p className="modal-card-title">Ride details:</p>
+                    <button
+                      className="delete"
+                      onClick={handleClick}
+                      aria-label="close"
+                    ></button>
+                  </header>
+                  <section className="modal-card-body">
+                    <div className="box">
+                      <h1 className="title">The Ride:</h1>
+                      <h2 className="subtitle">
+                        Denver Critical Mass has no leader. The route will be
+                        determined on the ride. Typically the route will go
+                        through Denver metro area, be about one hour long and
+                        end where it started. We ride rain or shine.
+                      </h2>
+                    </div>
+                    <div className="box">
+                      <h1 className="title">Pace:</h1>
+                      <h2 className="subtitle">
+                        Conversational. The pack stays together and waits for
+                        the back.
+                      </h2>
+                    </div>
+                    <div className="box">
+                      <h1 className="title">Safety:</h1>
+                      <h2 className="subtitle">
+                        Wear a helmet and bring lights.
+                      </h2>
+                    </div>
+                  </section>
+                  <footer className="modal-card-foot">
+                    <h2 className="subtitle is-6">
+                      Additional information at{" "}
+                      <a
+                        href="https://www.times-up.org/critical-mass/what-critical-mass"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        New York Critical Mass
+                      </a>{" "}
+                      &{" "}
+                      <a
+                        href="https://www.sfcriticalmass.org/faq/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        San Francisco Critical Mass
+                      </a>
+                    </h2>
+                  </footer>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
