@@ -36,7 +36,7 @@ const Home: NextPage = () => {
             <h1 className="title">Every last Friday of every month.</h1>
 
             <h2 className="subtitle">
-              Meeet up at 7:00PM at{" "}
+              Meet up at 7:00PM at{" "}
               <a
                 href="https://goo.gl/maps/cVHetdaYH31WRxTk7"
                 target="_blank"
@@ -96,7 +96,9 @@ const Home: NextPage = () => {
                     <div className="box">
                       <h1 className="title">Safety:</h1>
                       <h2 className="subtitle">
-                        Wear a helmet and bring lights.
+                        Wear a helmet and bring lights. Stop at red lights so
+                        the ride can mass up behind you. Fill gaps - critical
+                        mass depends on bicycle density.
                       </h2>
                     </div>
                   </section>
