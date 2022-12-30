@@ -47,7 +47,8 @@ const Home: NextPage = () => {
               . Ride at 7:20PM.
             </h2>
             <h2 className="subtitle">
-              Upcoming dates: 12/30/2022, 1/27/2023, 2/24/2023
+              Upcoming dates: <s style={{ color: "red" }}>12/30/2022</s> -
+              cancelled due to ice, 1/27/2023, 2/24/2023
             </h2>
             <hr />
             <button className="button is-info" onClick={handleClick}>
